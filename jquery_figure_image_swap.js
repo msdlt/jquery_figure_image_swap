@@ -5,7 +5,7 @@ $("figure.rollover").ready(function () {
   $("figure.rollover").removeClass("hidden");
   //create a <ul> tag for the links to show hide
   $("figure.rollover").append("<ul></ul>");
-  $("figure > figure").each(function () {
+  $("figure.rollover > figure").each(function () {
     $(this).attr("id", "targetimg_" + $(this).parent().index() + "_" + $(this).index());
     if ($(this).index() == 0) {
       $(this).addClass("show").removeClass("hidden");
