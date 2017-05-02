@@ -1,173 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<!--    <meta content="30" http-equiv="refresh" />-->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Bootstrap 101 Template</title>
 
-    <!-- Bootstrap -->
-    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <!--script src="https://code.jquery.com/jquery-2.2.0.min.js"></script-->
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+    <div class="container-fluid">
+        <style>
+            figure{margin:0 0 1rem; width: initial;}
+            .figure{display:inline-block; width: initial;}
+            .figure-img{margin-bottom:.5rem;line-height:1;max-width: 200px;}
+            .figure-caption{font-size:90%;color:#818a91;}
+            #region-main ul, #region-main ol{padding-left: 2.5rem;}
+            .right{float:right;}
+            dl {margin-top: 0;margin-bottom: 1rem;}
+            dt {font-weight: bold;}
+            dd {margin-bottom: .5rem; margin-left: 1rem;}
+            dl.row > dd + dt {clear: left;}
+            dfn {font-weight:bold;color: green;}
 
- </head>
-  <body>
-<div class="container-fluid">
-    <style>
-    figure{margin:0 0 1rem; width: initial;}
-    .figure{display:inline-block; width: initial;}
-    .figure-img{margin-bottom:.5rem;line-height:1;max-width: 200px;}
-    .figure-caption{font-size:90%;color:#818a91;}
-    #region-main ul, #region-main ol{padding-left: 2.5rem;}
-    .right{float:right;}
-    dl {margin-top: 0;margin-bottom: 1rem;}
-    dt {font-weight: bold;}
-    dd {margin-bottom: .5rem; margin-left: 1rem;}
-    dl.row > dd + dt {clear: left;}
-    dfn {font-weight:bold;color: green;}
+            abbr { color:magenta;font-weight:bold;}
+            abbr[title],abbr[data-original-title] {cursor: help; border-bottom: 1px dotted #818a91;}
+            abbr[title] {border-bottom: none; text-decoration: underline; text-decoration: underline dotted;}
 
-    abbr { color:magenta;font-weight:bold;}
-    abbr[title],abbr[data-original-title] {cursor: help; border-bottom: 1px dotted #818a91;}
-    abbr[title] {border-bottom: none; text-decoration: underline; text-decoration: underline dotted;}
-
-    h5 {color: orange; font-size: 16px;}
-    h6 {color: greenyellow; font-size: 14px;}
-    ul {margin-left: 0px;}
-    </style>
-<div id="imageswap">
-<figure class="">
-  <!-- 2 yr -->
-  <figure class="">
-  <figure class="rollover">
-    <figure class="figure">
-      <img class="figure-img img-fluid" src="../medlearn_swfs/OrgBehav/Class1/Images/Hand_XR_2yr.jpg" alt="2 year Old" />
-      <figcaption class="figure-caption text-xs-left">2 Years</figcaption>
-    </figure>
-    <figure class="figure">
-      <img class="figure-img img-fluid" src="../medlearn_swfs/OrgBehav/Class1/Images/Hand_XR_2yr_smallbones.jpg" alt="Small Bones"/>
-      <figcaption class="figure-caption text-xs-left">Small Bones</figcaption>
-    </figure>
-    <figcaption class="figure-caption text-xs-center">Figure 21a: The Hand at 2 Years</figcaption>
-  </figure>
-  <!-- 4 yr -->
-  <figure class="rollover">
-    <figure class="figure">
-      <img class="figure-img img-fluid" src="../medlearn_swfs/OrgBehav/Class1/Images/Hand_XR_4yr.jpg" alt="4 year Old" />
-      <figcaption class="figure-caption text-xs-left">2 Years</figcaption>
-    </figure>
-    <figure class="figure">
-      <img class="figure-img img-fluid" src="../medlearn_swfs/OrgBehav/Class1/Images/Hand_XR_4yr_smallbones.jpg" alt="Small Bones"/>
-      <figcaption class="figure-caption text-xs-left">Small Bones</figcaption>
-    </figure>
-    <figure class="figure">
-      <img class="figure-img img-fluid" src="../medlearn_swfs/OrgBehav/Class1/Images/Hand_XR_4yr_epiphyses.jpg" alt="Epiphyses"/>
-      <figcaption class="figure-caption text-xs-left">Epiphyses</figcaption>
-    </figure>
-    <figcaption class="figure-caption text-xs-center">Figure 21b: The Hand at 2 Years</figcaption>
-  </figure>
-  <!-- Adult -->
-  <figure class="">
-    <figure class="figure">
-      <img class="figure-img img-fluid" src="../medlearn_swfs/OrgBehav/Class1/Images/Hand_XR_Adult.jpg" alt="Adult"/>
-      <figcaption class="figure-caption text-xs-left">Figure 21c: Adult</figcaption>
-    </figure>
-  </figure>
-  <figcaption>Figure 21: Developing bones of the hand at a) 2 years, b) 4 years and c) Adult</figcaption>
-</figure>
-</figure>
-  <figure class="rollover">
-    <figure class="figure">
-      <img class="figure-img img-fluid" src="../medlearn_swfs/OrgBehav/Class1/Images/Hand_XR_2yr.jpg" alt="2 year Old" />
-      <figcaption class="figure-caption text-xs-left">2 Years</figcaption>
-    </figure>
-    <figure class="figure">
-      <img class="figure-img img-fluid" src="../medlearn_swfs/OrgBehav/Class1/Images/Hand_XR_4yr.jpg" alt="4 Year Old"/>
-      <figcaption class="figure-caption text-xs-left">4 Years</figcaption>
-    </figure>
-    <figure class="figure">
-      <img class="figure-img img-fluid" src="../medlearn_swfs/OrgBehav/Class1/Images/Hand_XR_Adult.jpg" alt="Adult"/>
-      <figcaption class="figure-caption text-xs-left">Adult</figcaption>
-    </figure>
-    <figcaption class="figure-caption text-xs-center">Figure: The Developing Skeleton</figcaption>
-  </figure>
+            h5 {color: orange; font-size: 16px;}
+            h6 {color: greenyellow; font-size: 14px;}
+            ul {margin-left: 0px;}
+        </style>
+        <div id="imageswap">
+            <figure class="">
+              <!-- 2 yr -->
+              <figure class="">
+              <figure class="rollover">
+                <figure class="figure">
+                  <img class="figure-img img-fluid" src="../medlearn_swfs/OrgBehav/Class1/Images/Hand_XR_2yr.jpg" alt="2 year Old" />
+                  <figcaption class="figure-caption text-xs-left">2 Years</figcaption>
+                </figure>
+                <figure class="figure">
+                  <img class="figure-img img-fluid" src="../medlearn_swfs/OrgBehav/Class1/Images/Hand_XR_2yr_smallbones.jpg" alt="Small Bones"/>
+                  <figcaption class="figure-caption text-xs-left">Small Bones</figcaption>
+                </figure>
+                <figcaption class="figure-caption text-xs-center">Figure 21a: The Hand at 2 Years</figcaption>
+              </figure>
+              <!-- 4 yr -->
+              <figure class="rollover">
+                <figure class="figure">
+                  <img class="figure-img img-fluid" src="../medlearn_swfs/OrgBehav/Class1/Images/Hand_XR_4yr.jpg" alt="4 year Old" />
+                  <figcaption class="figure-caption text-xs-left">2 Years</figcaption>
+                </figure>
+                <figure class="figure">
+                  <img class="figure-img img-fluid" src="../medlearn_swfs/OrgBehav/Class1/Images/Hand_XR_4yr_smallbones.jpg" alt="Small Bones"/>
+                  <figcaption class="figure-caption text-xs-left">Small Bones</figcaption>
+                </figure>
+                <figure class="figure">
+                  <img class="figure-img img-fluid" src="../medlearn_swfs/OrgBehav/Class1/Images/Hand_XR_4yr_epiphyses.jpg" alt="Epiphyses"/>
+                  <figcaption class="figure-caption text-xs-left">Epiphyses</figcaption>
+                </figure>
+                <figcaption class="figure-caption text-xs-center">Figure 21b: The Hand at 2 Years</figcaption>
+              </figure>
+              <!-- Adult -->
+              <figure class="">
+                <figure class="figure">
+                  <img class="figure-img img-fluid" src="../medlearn_swfs/OrgBehav/Class1/Images/Hand_XR_Adult.jpg" alt="Adult"/>
+                  <figcaption class="figure-caption text-xs-left">Figure 21c: Adult</figcaption>
+                </figure>
+              </figure>
+              <figcaption>Figure 21: Developing bones of the hand at a) 2 years, b) 4 years and c) Adult</figcaption>
+            </figure>
+            </figure>
+              <figure class="rollover">
+                <figure class="figure">
+                  <img class="figure-img img-fluid" src="../medlearn_swfs/OrgBehav/Class1/Images/Hand_XR_2yr.jpg" alt="2 year Old" />
+                  <figcaption class="figure-caption text-xs-left">2 Years</figcaption>
+                </figure>
+                <figure class="figure">
+                  <img class="figure-img img-fluid" src="../medlearn_swfs/OrgBehav/Class1/Images/Hand_XR_4yr.jpg" alt="4 Year Old"/>
+                  <figcaption class="figure-caption text-xs-left">4 Years</figcaption>
+                </figure>
+                <figure class="figure">
+                  <img class="figure-img img-fluid" src="../medlearn_swfs/OrgBehav/Class1/Images/Hand_XR_Adult.jpg" alt="Adult"/>
+                  <figcaption class="figure-caption text-xs-left">Adult</figcaption>
+                </figure>
+                <figcaption class="figure-caption text-xs-center">Figure: The Developing Skeleton</figcaption>
+              </figure>
 
 
-  <figure class="rollover ">
-    <figure class="figure">
-      <img class="figure-img img-fluid" src="images/Shoulder_Bones.jpg" alt="Clear Markings" />
-      <figcaption class="figure-caption text-xs-left">The bones of the shoulder joint</figcaption>
-    </figure>
-    <figure class="figure">
-      <img class="figure-img img-fluid" src="images/Shoulder_Bones_Acromial.jpg" alt="Acromial"/>
-      <figcaption class="figure-caption text-xs-left">Acromial</figcaption>
-    </figure>
-    <figure class="figure">
-      <img class="figure-img img-fluid" src="images/Shoulder_Bones_Coracoid.jpg" alt="Coracoid"/>
-      <figcaption class="figure-caption text-xs-left">Coracoid</figcaption>
-    </figure>
-    <figure class="figure">
-      <img class="figure-img img-fluid" src="images/Shoulder_Bones_GreaterTub.jpg" alt="GreaterTub"/>
-      <figcaption class="figure-caption text-xs-left">GreaterTub</figcaption>
-    </figure>
-    <figure class="figure">
-      <img class="figure-img img-fluid" src="images/Shoulder_Bones_Head.jpg" alt="Head"/>
-      <figcaption class="figure-caption text-xs-left">Head</figcaption>
-    </figure>
-    <figure class="figure">
-      <img class="figure-img img-fluid" src="images/Shoulder_Bones_InterGroove.jpg" alt="InterGroove"/>
-      <figcaption class="figure-caption text-xs-left">InterGroove</figcaption>
-    </figure>
-    <figure class="figure">
-      <img class="figure-img img-fluid" src="images/Shoulder_Bones_LesserTub.jpg" alt="LesserTub"/>
-      <figcaption class="figure-caption text-xs-left">LesserTub</figcaption>
-    </figure>
-    <figcaption class="figure-caption text-xs-center">Figure: Bones of the Shoulder Joint 1</figcaption>
-  </figure>
-  <figure class="rollover ">
-    <figure class="figure">
-      <img class="figure-img img-fluid" src="images/Shoulder_Bones.jpg" alt="Clear Markings" />
-      <figcaption class="figure-caption text-xs-left">The bones of the shoulder joint</figcaption>
-    </figure>
-    <figure class="figure">
-      <img class="figure-img img-fluid" src="images/Shoulder_Bones_Acromial.jpg" alt="Acromial"/>
-      <figcaption class="figure-caption text-xs-left">Acromial</figcaption>
-    </figure>
-    <figure class="figure">
-      <img class="figure-img img-fluid" src="images/Shoulder_Bones_Coracoid.jpg" alt="Coracoid"/>
-      <figcaption class="figure-caption text-xs-left">Coracoid</figcaption>
-    </figure>
-    <figure class="figure">
-      <img class="figure-img img-fluid" src="images/Shoulder_Bones_GreaterTub.jpg" alt="GreaterTub"/>
-      <figcaption class="figure-caption text-xs-left">GreaterTub</figcaption>
-    </figure>
-    <figure class="figure">
-      <img class="figure-img img-fluid" src="images/Shoulder_Bones_Head.jpg" alt="Head"/>
-      <figcaption class="figure-caption text-xs-left">Head</figcaption>
-    </figure>
-    <figure class="figure">
-      <img class="figure-img img-fluid" src="images/Shoulder_Bones_InterGroove.jpg" alt="InterGroove"/>
-      <figcaption class="figure-caption text-xs-left">InterGroove</figcaption>
-    </figure>
-    <figure class="figure">
-      <img class="figure-img img-fluid" src="images/Shoulder_Bones_LesserTub.jpg" alt="LesserTub"/>
-      <figcaption class="figure-caption text-xs-left">LesserTub</figcaption>
-    </figure>
-    <figcaption class="figure-caption text-xs-center">Figure: Bones of the Shoulder Joint 2</figcaption>
-  </figure>
-
-</div>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="../bootstrap_test/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="jquery_figure_image_swap.js"></script>
-  </body>
+              <figure class="rollover ">
+                <figure class="figure">
+                  <img class="figure-img img-fluid" src="images/Shoulder_Bones.jpg" alt="Clear Markings" />
+                  <figcaption class="figure-caption text-xs-left">The bones of the shoulder joint</figcaption>
+                </figure>
+                <figure class="figure">
+                  <img class="figure-img img-fluid" src="images/Shoulder_Bones_Acromial.jpg" alt="Acromial"/>
+                  <figcaption class="figure-caption text-xs-left">Acromial</figcaption>
+                </figure>
+                <figure class="figure">
+                  <img class="figure-img img-fluid" src="images/Shoulder_Bones_Coracoid.jpg" alt="Coracoid"/>
+                  <figcaption class="figure-caption text-xs-left">Coracoid</figcaption>
+                </figure>
+                <figure class="figure">
+                  <img class="figure-img img-fluid" src="images/Shoulder_Bones_GreaterTub.jpg" alt="GreaterTub"/>
+                  <figcaption class="figure-caption text-xs-left">GreaterTub</figcaption>
+                </figure>
+                <figure class="figure">
+                  <img class="figure-img img-fluid" src="images/Shoulder_Bones_Head.jpg" alt="Head"/>
+                  <figcaption class="figure-caption text-xs-left">Head</figcaption>
+                </figure>
+                <figure class="figure">
+                  <img class="figure-img img-fluid" src="images/Shoulder_Bones_InterGroove.jpg" alt="InterGroove"/>
+                  <figcaption class="figure-caption text-xs-left">InterGroove</figcaption>
+                </figure>
+                <figure class="figure">
+                  <img class="figure-img img-fluid" src="images/Shoulder_Bones_LesserTub.jpg" alt="LesserTub"/>
+                  <figcaption class="figure-caption text-xs-left">LesserTub</figcaption>
+                </figure>
+                <figcaption class="figure-caption text-xs-center">Figure: Bones of the Shoulder Joint 1</figcaption>
+              </figure>
+              <figure class="rollover ">
+                <figure class="figure">
+                  <img class="figure-img img-fluid" src="images/Shoulder_Bones.jpg" alt="Clear Markings" />
+                  <figcaption class="figure-caption text-xs-left">The bones of the shoulder joint</figcaption>
+                </figure>
+                <figure class="figure">
+                  <img class="figure-img img-fluid" src="images/Shoulder_Bones_Acromial.jpg" alt="Acromial"/>
+                  <figcaption class="figure-caption text-xs-left">Acromial</figcaption>
+                </figure>
+                <figure class="figure">
+                  <img class="figure-img img-fluid" src="images/Shoulder_Bones_Coracoid.jpg" alt="Coracoid"/>
+                  <figcaption class="figure-caption text-xs-left">Coracoid</figcaption>
+                </figure>
+                <figure class="figure">
+                  <img class="figure-img img-fluid" src="images/Shoulder_Bones_GreaterTub.jpg" alt="GreaterTub"/>
+                  <figcaption class="figure-caption text-xs-left">GreaterTub</figcaption>
+                </figure>
+                <figure class="figure">
+                  <img class="figure-img img-fluid" src="images/Shoulder_Bones_Head.jpg" alt="Head"/>
+                  <figcaption class="figure-caption text-xs-left">Head</figcaption>
+                </figure>
+                <figure class="figure">
+                  <img class="figure-img img-fluid" src="images/Shoulder_Bones_InterGroove.jpg" alt="InterGroove"/>
+                  <figcaption class="figure-caption text-xs-left">InterGroove</figcaption>
+                </figure>
+                <figure class="figure">
+                  <img class="figure-img img-fluid" src="images/Shoulder_Bones_LesserTub.jpg" alt="LesserTub"/>
+                  <figcaption class="figure-caption text-xs-left">LesserTub</figcaption>
+                </figure>
+                <figcaption class="figure-caption text-xs-center">Figure: Bones of the Shoulder Joint 2</figcaption>
+              </figure>
+        </div>
+        </div>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="jquery_figure_image_swap.js"></script>
+    </body>
 </html>
